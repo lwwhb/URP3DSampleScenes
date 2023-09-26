@@ -58,15 +58,12 @@ This environment is specifically tailored for VR headsets and lower end mobile d
 
 # Getting started
 - Install Unity 2022.3.7f1 via the [Unity Hub](https://unity3d.com/get-unity/download) or the dedicated [download page](https://beta.unity3d.com/download/b16b3b16c7a0/download.html)
-- Install a GitHub client, such as [GitHub Desktop](https://desktop.github.com/) (free and open source)
-- Clone the project locally with your GitHub client: https://github.com/Unity-Technologies/URP3DSampleScenes
+- Download the project using the "Download ZIP" button under the "Code" menu
 - Add this project to the Unity Hub
 
-![image](https://media.github.cds.internal.unity3d.com/user/1194/files/878859dc-4a68-4ec2-9724-19b29bb520eb)
+![image](https://media.github.cds.internal.unity3d.com/user/1821/files/e3d2ee4d-b3b6-43bd-9a2b-3465b2930bd8)
 
-**Note 1:** Do not use the “Download ZIP” functionality on GitHub, as the ZIP won’t contain all assets needed for the project
-
-**Note 2:** Later this year, this project will be directly accessible through the Unity Hub, it will not require GitHub anymore.
+**Note:** Later this year, this project will be directly accessible through the Unity Hub, it will not require GitHub anymore.
 
 # What's next
 We are aiming for a final release at the time of Unite 2023 (mid-November), when the project will be directly available inside the Unity Hub. Until then, we will keep on polishing the project on the GitHub repository, based on your feedback and our internal plans.
