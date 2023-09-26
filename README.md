@@ -83,7 +83,7 @@ Currently, our focus is on the Unity 2022.3 LTS version. After the final release
 
 **Forward+ on mobile devices:** We are investigating a bug in Forward+ that causes light flickering on mobile devices.
 
-**In editor warnings:** We are still in the process of cleaning up all out system integrations so you can expect the occasional warning in the console. All them should be safe to ignore. 
+**In editor warnings:** We are still in the process of cleaning up all out system integrations so you can expect the occasional warning in the console. All of them should be safe to ignore. 
 
 **First editor run:** When opening the editor, navigating the scenes and entering game mode for the first time, many shader compilations will happen.
 
@@ -91,7 +91,7 @@ Currently, our focus is on the Unity 2022.3 LTS version. After the final release
 
 **Oasis:** The wind is currently turned off in the Oasis. It will be re-added in the upcoming months.
 
-**Misc:** Changing the resolution at runtime (such as scaling the game view) will cause the screen textures to have incorrect resolution. This might break the teleportatoin effect.
+**Misc:** Changing the resolution at runtime (such as scaling the game view) will cause the screen textures to have incorrect resolution. This might break the teleportation effect.
 
 # How to give feedback?
 
