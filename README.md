@@ -97,7 +97,7 @@ Currently, our focus is on the Unity 2022.3 LTS version. After the final release
 
 Please take a look at the [Known issues](#known-issues) above, before reporting issues.
 
-We invite you to share your general sentiment, ask questions and request help directly in the forum. We also encourage you to experiment with the content of this project and share your findings.
+We invite you to share your general sentiment, ask questions and request help directly in the [forum](https://forum.unity.com/threads/introducing-the-new-urp-3d-sample.1495706/#post-9365378). We also encourage you to experiment with the content of this project and share your findings.
 
 Furthermore, we are also interested in the level of performance you are getting on your devices. This may help us to identify performance issues on certain hardware configurations.
 
