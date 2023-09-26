@@ -23,7 +23,7 @@ This environment offers a radical bump in visual quality compared to the current
 
 In the main outdoor area, a large platform surrounded by water lets you review your assets in a neutral environment with calibrated lighting conditions. Once on the ramp, you can enter 3 rooms which will teleport you into universes with radically different art styles and platform reach: the Garden, the Oasis, and the Cockpit. To initiate the teleportation, focus on the Unity logo above the teleporting device for a few seconds (requires Play Mode).
 
-![TerminalTeleportation](https://media.github.cds.internal.unity3d.com/user/1194/files/523d673b-5e2c-4b1d-8008-59fe3d474eb5)
+![TerminalTeleportation](https://drive.google.com/uc?export=view&id=1xvbeB9q0x5D8s2ny9ubd9P6uLSsP-uH3)
 
 ## Garden
 
