@@ -32,6 +32,8 @@ public class SceneTransitionManager : MonoBehaviour
     
     private bool InTerminal = true;
 
+    private bool m_EneableCharacterInFollowingFrame = false;
+
     private SceneLoader m_Loader;
 
     private Transform spawnTransform;
@@ -127,6 +129,12 @@ public class SceneTransitionManager : MonoBehaviour
 
     void Update()
     {
+        if (m_EneableCharacterInFollowingFrame)
+        {
+            m_Player.GetComponent<StarterAssets.FirstPersonController>().enabled = true;
+            m_EneableCharacterInFollowingFrame = false;
+        }
+
         float t = m_OverrideTransition ? m_ManualTransition : ElapsedTimeInTransition / m_TransitionTime;
 
         if (InTransition)
@@ -340,7 +348,7 @@ public class SceneTransitionManager : MonoBehaviour
         mainCameraData.SetRenderer(instance.screenScene.RendererIndex);
 
         //Reenable controller after teleporting
-        controller.enabled = true;
+        instance.m_EneableCharacterInFollowingFrame = true;
         
         SceneManager.SetActiveScene(instance.screenScene.Scene);
         
