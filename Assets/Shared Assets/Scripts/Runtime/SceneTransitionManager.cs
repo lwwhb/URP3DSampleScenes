@@ -32,6 +32,8 @@ public class SceneTransitionManager : MonoBehaviour
     
     private bool InTerminal = true;
 
+    private bool m_EneableCharacterInFollowingFrame = false;
+
     private SceneLoader m_Loader;
 
     private Transform spawnTransform;
@@ -127,6 +129,12 @@ public class SceneTransitionManager : MonoBehaviour
 
     void Update()
     {
+        if (m_EneableCharacterInFollowingFrame)
+        {
+            m_Player.GetComponent<StarterAssets.FirstPersonController>().enabled = true;
+            m_EneableCharacterInFollowingFrame = false;
+        }
+
         float t = m_OverrideTransition ? m_ManualTransition : ElapsedTimeInTransition / m_TransitionTime;
 
         if (InTransition)
@@ -199,11 +207,19 @@ public class SceneTransitionManager : MonoBehaviour
         }
         
         //Toggle main light
-        ToggleMainLight(currentScene, isMainCamera);
-        ToggleMainLight(screenScene, !isMainCamera);
-        
+        if (camera.cameraType == CameraType.SceneView)
+        {
+            ToggleMainLight(currentScene, true);
+            ToggleMainLight(screenScene, false);
+        }
+        else
+        {
+            ToggleMainLight(currentScene, isMainCamera);
+            ToggleMainLight(screenScene, !isMainCamera);
+        }
+
         //Setup render settings
-        SceneMetaData sceneToRender = isMainCamera ? currentScene : screenScene;
+        SceneMetaData sceneToRender = isMainCamera || camera.cameraType == CameraType.SceneView ? currentScene : screenScene;
         RenderSettings.fog = sceneToRender.FogEnabled;
         RenderSettings.skybox = sceneToRender.skybox;
         if (sceneToRender.reflection != null)
@@ -332,7 +348,7 @@ public class SceneTransitionManager : MonoBehaviour
         mainCameraData.SetRenderer(instance.screenScene.RendererIndex);
 
         //Reenable controller after teleporting
-        controller.enabled = true;
+        instance.m_EneableCharacterInFollowingFrame = true;
         
         SceneManager.SetActiveScene(instance.screenScene.Scene);
         
@@ -463,6 +479,10 @@ public class SceneTransitionManager : MonoBehaviour
         {
             sceneLoader.screen.TurnScreenOn();
         }
+        
+        //Set the renderer index
+        int index = sceneMetaData.RendererIndex > 1 ? sceneMetaData.RendererIndex : 1;
+        instance.m_ScreenCamera.GetComponent<UniversalAdditionalCameraData>().SetRenderer(index);
         
         instance.m_ScreenCamera.GetComponent<Camera>().enabled = true;
         instance.m_ScreenOff = false;
