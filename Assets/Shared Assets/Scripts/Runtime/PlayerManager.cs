@@ -19,6 +19,7 @@ public class PlayerManager : MonoBehaviour
     private bool m_InFlythrough;
     private float m_TimeIdle;
     private CinemachineVirtualCamera m_VirtualCamera;
+    private bool m_HasFocus;
     
     void Start()
     {
@@ -46,8 +47,8 @@ public class PlayerManager : MonoBehaviour
             m_TimeIdle = 0;
             EnableFlythrough();
         }
-
-        m_TimeIdle += Time.unscaledDeltaTime;
+        
+        if(m_HasFocus) m_TimeIdle += Time.unscaledDeltaTime;
     }
 
     private void Awake()
@@ -82,6 +83,11 @@ public class PlayerManager : MonoBehaviour
                 m_TouchInputCanvas.SetActive(false);
             }
         }
+    }
+    
+    private void OnApplicationFocus(bool hasFocus)
+    {
+        m_HasFocus = hasFocus;
     }
 
     public void EnableFirstPersonController()
