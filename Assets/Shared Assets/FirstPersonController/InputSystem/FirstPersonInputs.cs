@@ -22,10 +22,43 @@ namespace StarterAssets
 		public bool cursorInputForLook = true;
 
 		public PlayerManager CameraManager;
+		
+		private bool m_IgnoreInput;
+		
+#if UNITY_EDITOR
+		private static bool m_FocusActionsSetUp;
+
+		private void Start()
+		{
+			if (!m_FocusActionsSetUp)
+			{
+				var ignoreInput = new InputAction(binding: "/Keyboard/escape");
+				ignoreInput.performed += context => m_IgnoreInput = true;
+				ignoreInput.Enable();
+
+				var enableInput = new InputAction(binding: "/Mouse/leftButton");
+				enableInput.performed += context => m_IgnoreInput = false;
+				enableInput.Enable();
+				
+				m_FocusActionsSetUp = true;
+			}
+		}
+
+		private void OnDestroy()
+		{
+			m_FocusActionsSetUp = false;
+		}
+#endif
 
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
 		public void OnMove(InputValue value)
 		{
+			if (m_IgnoreInput)
+			{
+				MoveInput(Vector2.zero);
+				return;
+			}
+			
 			if (CameraManager != null)
 			{
 				CameraManager.NotifyPlayerMoved();
@@ -35,6 +68,12 @@ namespace StarterAssets
 
 		public void OnLook(InputValue value)
 		{
+			if (m_IgnoreInput)
+			{
+				LookInput(Vector2.zero);
+				return;
+			}
+			
 			if (CameraManager != null)
 			{
 				CameraManager.NotifyPlayerMoved();
@@ -71,7 +110,7 @@ namespace StarterAssets
 		} 
 
 		public void LookInput(Vector2 newLookDirection)
-		{
+		{ 
 			look = newLookDirection;
 		}
 
@@ -88,6 +127,7 @@ namespace StarterAssets
 		private void OnApplicationFocus(bool hasFocus)
 		{
 			SetCursorState(cursorLocked);
+			m_IgnoreInput = !hasFocus;
 		}
 
 		private void SetCursorState(bool newState)
