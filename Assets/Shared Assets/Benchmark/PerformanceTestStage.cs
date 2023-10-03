@@ -264,6 +264,9 @@ namespace Benchmarking
             // Wait for scene to be loaded
             yield return new WaitUntil(HasSceneLoaded);
 
+            yield return null;
+            PerformanceTest.instance.RefreshEventSystem();
+
             DisableCamerasInScene();
 
             var directors = Resources.FindObjectsOfTypeAll<PlayableDirector>();

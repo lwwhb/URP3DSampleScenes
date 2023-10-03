@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
@@ -60,6 +61,13 @@ namespace Benchmarking
         private bool _liveRefreshGraph = true;
 
         [SerializeField] private GameObject _cameraPrefab;
+
+        [SerializeField]
+        private EventSystem _eventSystem;
+        public void RefreshEventSystem()
+        {
+            EventSystem.SetUITookitEventSystemOverride(_eventSystem);
+        }
         
         public bool liveRefreshGraph => _liveRefreshGraph;
 
