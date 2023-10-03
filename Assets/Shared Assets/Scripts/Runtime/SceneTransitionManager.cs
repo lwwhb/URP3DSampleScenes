@@ -6,6 +6,7 @@ using UnityEngine.Rendering.Universal;
 using UnityEngine.SceneManagement;
 using Benchmarking;
 using Cinemachine;
+using UnityEngine.UI;
 
 public class SceneTransitionManager : MonoBehaviour
 {
@@ -441,6 +442,8 @@ public class SceneTransitionManager : MonoBehaviour
     /// </summary>
     public static void EnableScene(SceneLoader sceneLoader)
     {
+        if (!IsAvailable()) return;
+
         SceneMetaData sceneMetaData = instance.registeredScenes[sceneLoader.SceneName];
 
         if (sceneMetaData == null)
@@ -538,6 +541,8 @@ public class SceneTransitionManager : MonoBehaviour
 
     public static void StartTransition(MediaSceneLoader mediaSceneLoader)
     {
+        if (!IsAvailable()) return;
+        
         instance.m_MediaSceneLoader = mediaSceneLoader;
         if (!instance.InTerminal)
         {
