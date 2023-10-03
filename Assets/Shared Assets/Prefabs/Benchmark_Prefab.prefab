@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 8132712973314222637}
   - component: {fileID: 3871017663001273271}
   - component: {fileID: 2682277743158303610}
+  - component: {fileID: 3402880044481262717}
+  - component: {fileID: 8920008805867454334}
   m_Layer: 0
   m_Name: Benchmark_Prefab
   m_TagString: Untagged
@@ -48,15 +50,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _autoStart: 1
   _stages:
-  - sceneName: TerminalScene
+  - enabled: 1
+    sceneName: TerminalScene
     cameraPosition: {x: 0, y: 0, z: 0}
     cameraRotation: {x: 0, y: 0, z: 0, w: 0}
     useFullTimeline: 1
-  - sceneName: Garden
+  - enabled: 1
+    sceneName: Garden
     cameraPosition: {x: 0, y: 0, z: 0}
     cameraRotation: {x: 0, y: 0, z: 0, w: 0}
     useFullTimeline: 1
-  - sceneName: OasisScene
+  - enabled: 1
+    sceneName: OasisScene
+    cameraPosition: {x: 0, y: 0, z: 0}
+    cameraRotation: {x: 0, y: 0, z: 0, w: 0}
+    useFullTimeline: 1
+  - enabled: 1
+    sceneName: Cockpit_Ride
     cameraPosition: {x: 0, y: 0, z: 0}
     cameraRotation: {x: 0, y: 0, z: 0, w: 0}
     useFullTimeline: 1
@@ -64,6 +74,9 @@ MonoBehaviour:
   _framesToCapture: 500
   _testDataVisualTreeReference: {fileID: 9197481963319205126, guid: 55b23197e3bc1df4c84c22c909c70d26, type: 3}
   _currentTimingRefreshCount: 10
+  _liveRefreshGraph: 0
+  _cameraPrefab: {fileID: 1184572588443782738, guid: cb5acae8f598448fb9a77de3f3f3ec37, type: 3}
+  _eventSystem: {fileID: 3402880044481262717}
 --- !u!114 &2682277743158303610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80,6 +93,51 @@ MonoBehaviour:
   m_ParentUI: {fileID: 0}
   sourceAsset: {fileID: 9197481963319205126, guid: 13df3b6894d9013438db11005082cc52, type: 3}
   m_SortingOrder: 0
+--- !u!114 &3402880044481262717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194520623583548762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!114 &8920008805867454334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194520623583548762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_MoveRepeatDelay: 0.5
+  m_MoveRepeatRate: 0.1
+  m_XRTrackingOrigin: {fileID: 0}
+  m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_PointAction: {fileID: 1054132383583890850, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_MoveAction: {fileID: 3710738434707379630, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_SubmitAction: {fileID: 2064916234097673511, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_CancelAction: {fileID: -1967631576421560919, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_LeftClickAction: {fileID: 8056856818456041789, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_MiddleClickAction: {fileID: 3279352641294131588, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_RightClickAction: {fileID: 3837173908680883260, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_ScrollWheelAction: {fileID: 4502412055082496612, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_TrackedDevicePositionAction: {fileID: 4754684134866288074, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_TrackedDeviceOrientationAction: {fileID: 1025543830046995696, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_DeselectOnBackgroundClick: 1
+  m_PointerBehavior: 0
+  m_CursorLockBehavior: 0
 --- !u!1 &2347660263666688036
 GameObject:
   m_ObjectHideFlags: 0
