@@ -23,6 +23,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2302073556517278132}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -30,7 +31,6 @@ Transform:
   m_Children:
   - {fileID: 8016712411973108387}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &7551318366156367176
 PrefabInstance:
@@ -171,6 +171,14 @@ PrefabInstance:
     - target: {fileID: 4349487987056462619, guid: 9812f7e3f97d00d4eaf1795bb62b683f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 126
+      objectReference: {fileID: 0}
+    - target: {fileID: 4742473837712756890, guid: 9812f7e3f97d00d4eaf1795bb62b683f, type: 3}
+      propertyPath: m_FadeMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4742473837712756890, guid: 9812f7e3f97d00d4eaf1795bb62b683f, type: 3}
+      propertyPath: m_AnimateCrossFading
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4742473837712756890, guid: 9812f7e3f97d00d4eaf1795bb62b683f, type: 3}
       propertyPath: m_LODs.Array.data[0].screenRelativeHeight

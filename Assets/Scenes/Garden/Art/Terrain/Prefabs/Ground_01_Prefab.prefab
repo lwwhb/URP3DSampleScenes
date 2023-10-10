@@ -23,6 +23,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4816275364228427864}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -34,10 +35,41 @@ Transform:
   - {fileID: 7636964247728345765}
   - {fileID: 569718358989384987}
   - {fileID: 2659901263332958826}
+  - {fileID: 8703864797763447856}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5879269367367887335
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8703864797763447856}
+  m_Layer: 0
+  m_Name: GravelBakePlane_-0.05
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8703864797763447856
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5879269367367887335}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
   - {fileID: 71369493307075934}
   - {fileID: 4189690815730813880}
-  m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_Father: {fileID: 4095873127962567265}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &27780987830782704
 PrefabInstance:
@@ -63,6 +95,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c4727ce92a2fb2546a2940d795cdb0bf, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c4727ce92a2fb2546a2940d795cdb0bf, type: 3}
+      propertyPath: m_LightmapParameters
+      value: 
+      objectReference: {fileID: 111300000, guid: 1db0d893e15b0a941937c30d1ced0cf2, type: 2}
+    - target: {fileID: -7511558181221131132, guid: c4727ce92a2fb2546a2940d795cdb0bf, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 98458e5340227cb4eaf5dba31c117709, type: 2}
     - target: {fileID: 919132149155446097, guid: c4727ce92a2fb2546a2940d795cdb0bf, type: 3}
       propertyPath: m_Name
       value: Ground_Grass_02_Mesh
@@ -87,7 +131,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 4095873127962567265}
+    m_TransformParent: {fileID: 8703864797763447856}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 8a52b4ad72d7dd546ab2600e6204200a, type: 3}
       propertyPath: m_RootOrder
@@ -107,15 +151,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8a52b4ad72d7dd546ab2600e6204200a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.85
+      value: -4.8500004
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8a52b4ad72d7dd546ab2600e6204200a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.09
+      value: -0.00999999
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8a52b4ad72d7dd546ab2600e6204200a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.98
+      value: -0.98000336
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8a52b4ad72d7dd546ab2600e6204200a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -127,7 +171,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8a52b4ad72d7dd546ab2600e6204200a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8a52b4ad72d7dd546ab2600e6204200a, type: 3}
       propertyPath: m_LocalRotation.z
@@ -158,6 +202,10 @@ PrefabInstance:
       value: Ground_Gravels_01_Mesh
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 8a52b4ad72d7dd546ab2600e6204200a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8a52b4ad72d7dd546ab2600e6204200a, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 127
       objectReference: {fileID: 0}
@@ -184,6 +232,26 @@ PrefabInstance:
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b474b4d4393cfa846a4daf661e242ef2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b474b4d4393cfa846a4daf661e242ef2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b474b4d4393cfa846a4daf661e242ef2, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b474b4d4393cfa846a4daf661e242ef2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b474b4d4393cfa846a4daf661e242ef2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b474b4d4393cfa846a4daf661e242ef2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
@@ -195,9 +263,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: b474b4d4393cfa846a4daf661e242ef2, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: b474b4d4393cfa846a4daf661e242ef2, type: 3}
+      propertyPath: m_LightmapParameters
+      value: 
+      objectReference: {fileID: 111300000, guid: 1db0d893e15b0a941937c30d1ced0cf2, type: 2}
+    - target: {fileID: -7511558181221131132, guid: b474b4d4393cfa846a4daf661e242ef2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 98458e5340227cb4eaf5dba31c117709, type: 2}
     - target: {fileID: 919132149155446097, guid: b474b4d4393cfa846a4daf661e242ef2, type: 3}
       propertyPath: m_Name
       value: Ground_Grass_01_Mesh
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b474b4d4393cfa846a4daf661e242ef2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b474b4d4393cfa846a4daf661e242ef2, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -237,6 +321,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 663c6fc593419f248a126184e8954b0f, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 663c6fc593419f248a126184e8954b0f, type: 3}
+      propertyPath: m_LightmapParameters
+      value: 
+      objectReference: {fileID: 111300000, guid: 1db0d893e15b0a941937c30d1ced0cf2, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 663c6fc593419f248a126184e8954b0f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 98458e5340227cb4eaf5dba31c117709, type: 2}
     - target: {fileID: 919132149155446097, guid: 663c6fc593419f248a126184e8954b0f, type: 3}
       propertyPath: m_Name
       value: Ground_Grass_05_Mesh
@@ -261,7 +357,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 4095873127962567265}
+    m_TransformParent: {fileID: 8703864797763447856}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: b1b17c4b8eb4628488472eb8a0460699, type: 3}
       propertyPath: m_RootOrder
@@ -281,11 +377,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b1b17c4b8eb4628488472eb8a0460699, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.85
+      value: -4.8500004
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b1b17c4b8eb4628488472eb8a0460699, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.068
+      value: 0.012000024
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b1b17c4b8eb4628488472eb8a0460699, type: 3}
       propertyPath: m_LocalPosition.z
@@ -301,7 +397,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b1b17c4b8eb4628488472eb8a0460699, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b1b17c4b8eb4628488472eb8a0460699, type: 3}
       propertyPath: m_LocalRotation.z
@@ -358,6 +454,26 @@ PrefabInstance:
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d02854d1191531f4b8927ea4eb341aa7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d02854d1191531f4b8927ea4eb341aa7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d02854d1191531f4b8927ea4eb341aa7, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d02854d1191531f4b8927ea4eb341aa7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d02854d1191531f4b8927ea4eb341aa7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d02854d1191531f4b8927ea4eb341aa7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
@@ -369,6 +485,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: d02854d1191531f4b8927ea4eb341aa7, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: d02854d1191531f4b8927ea4eb341aa7, type: 3}
+      propertyPath: m_LightmapParameters
+      value: 
+      objectReference: {fileID: 111300000, guid: 1db0d893e15b0a941937c30d1ced0cf2, type: 2}
+    - target: {fileID: -7511558181221131132, guid: d02854d1191531f4b8927ea4eb341aa7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 98458e5340227cb4eaf5dba31c117709, type: 2}
     - target: {fileID: 919132149155446097, guid: d02854d1191531f4b8927ea4eb341aa7, type: 3}
       propertyPath: m_Name
       value: Ground_Grass_04_Mesh
@@ -411,6 +539,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: d57673e10c10d4c4cbbacac090d38d18, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: d57673e10c10d4c4cbbacac090d38d18, type: 3}
+      propertyPath: m_LightmapParameters
+      value: 
+      objectReference: {fileID: 111300000, guid: 1db0d893e15b0a941937c30d1ced0cf2, type: 2}
+    - target: {fileID: -7511558181221131132, guid: d57673e10c10d4c4cbbacac090d38d18, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 98458e5340227cb4eaf5dba31c117709, type: 2}
     - target: {fileID: 919132149155446097, guid: d57673e10c10d4c4cbbacac090d38d18, type: 3}
       propertyPath: m_Name
       value: Ground_Grass_06_Mesh
@@ -453,6 +593,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 2f75c3d9a50f1e344b359ecd12678f0a, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 2f75c3d9a50f1e344b359ecd12678f0a, type: 3}
+      propertyPath: m_LightmapParameters
+      value: 
+      objectReference: {fileID: 111300000, guid: 1db0d893e15b0a941937c30d1ced0cf2, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 2f75c3d9a50f1e344b359ecd12678f0a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 98458e5340227cb4eaf5dba31c117709, type: 2}
     - target: {fileID: 919132149155446097, guid: 2f75c3d9a50f1e344b359ecd12678f0a, type: 3}
       propertyPath: m_Name
       value: Ground_Grass_03_Mesh
