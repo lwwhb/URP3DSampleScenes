@@ -99,6 +99,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _AO_Intensity: 1
     - _AO_SSS_Enabled: 1
     - _AlphaClip: 0
     - _AlphaToMask: 0
@@ -135,7 +136,7 @@ Material:
     - _Surface: 0
     - _Vertex_AO_Enabled: 1
     - _WINDQUALITY: 4
-    - _WindQuality: 1
+    - _WindQuality: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
