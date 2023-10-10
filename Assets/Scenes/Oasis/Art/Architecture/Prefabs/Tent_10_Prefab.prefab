@@ -363,6 +363,14 @@ PrefabInstance:
       value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 4742473837712756890, guid: 0b3a85c069755b646aef360b38f3df39, type: 3}
+      propertyPath: m_FadeMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4742473837712756890, guid: 0b3a85c069755b646aef360b38f3df39, type: 3}
+      propertyPath: m_AnimateCrossFading
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4742473837712756890, guid: 0b3a85c069755b646aef360b38f3df39, type: 3}
       propertyPath: m_LODs.Array.data[0].screenRelativeHeight
       value: 0.25
       objectReference: {fileID: 0}

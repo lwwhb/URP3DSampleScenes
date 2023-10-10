@@ -129,6 +129,14 @@ PrefabInstance:
       value: Tent_09_Mesh
       objectReference: {fileID: 0}
     - target: {fileID: 4742473837712756890, guid: a69bcb39493ce014c94aa3c02c1d29ad, type: 3}
+      propertyPath: m_FadeMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4742473837712756890, guid: a69bcb39493ce014c94aa3c02c1d29ad, type: 3}
+      propertyPath: m_AnimateCrossFading
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4742473837712756890, guid: a69bcb39493ce014c94aa3c02c1d29ad, type: 3}
       propertyPath: m_LODs.Array.data[0].screenRelativeHeight
       value: 0.25
       objectReference: {fileID: 0}
