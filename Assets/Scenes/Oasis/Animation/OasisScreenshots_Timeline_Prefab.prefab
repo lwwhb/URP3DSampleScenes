@@ -1467,7 +1467,7 @@ GameObject:
   - component: {fileID: 4852079477839058551}
   - component: {fileID: 6720297318228736768}
   m_Layer: 0
-  m_Name: Oasis_Screenshots_Timeline_Prefab
+  m_Name: OasisScreenshots_Timeline_Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
