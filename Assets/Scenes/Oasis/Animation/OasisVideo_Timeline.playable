@@ -1466,7 +1466,6 @@ MonoBehaviour:
   - {fileID: -7095049487993840704}
   - {fileID: 1928595547388372905}
   - {fileID: -1342941935604888266}
-  - {fileID: 5594030191942667807}
   m_FixedDuration: 0
   m_EditorSettings:
     m_Framerate: 30
@@ -1529,29 +1528,6 @@ MonoBehaviour:
   VirtualCamera:
     exposedName: 615c6bb4a9c5f4d448f787b3847ed5a8
     defaultValue: {fileID: 0}
---- !u!114 &5594030191942667807
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e6cf5671577b7344ba25c25b4346ce4, type: 3}
-  m_Name: Recorder Track
-  m_EditorClassIdentifier: 
-  m_Version: 3
-  m_AnimClip: {fileID: 0}
-  m_Locked: 0
-  m_Muted: 0
-  m_CustomPlayableFullTypename: 
-  m_Curves: {fileID: 0}
-  m_Parent: {fileID: 11400000}
-  m_Children: []
-  m_Clips: []
-  m_Markers:
-    m_Objects: []
 --- !u!114 &5917432482002137704
 MonoBehaviour:
   m_ObjectHideFlags: 1
