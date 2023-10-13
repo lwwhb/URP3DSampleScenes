@@ -33,7 +33,7 @@ MonoBehaviour:
       m_Leaf: Recordings\Screenshots
       m_ForceAssetFolder: 0
       m_AbsolutePath: C:/Users/pydon/Documents/Unity/Templates-ContentTemplate_10_URP_Template/Recordings/Screenshots
-    m_FileName: <Scene>05
+    m_FileName: GardenScreenshot05
   m_Version: 1
   outputFormat: 0
   captureAlpha: 0
@@ -354,7 +354,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: Screenshot1
+    m_DisplayName: GardenScreenshot01
   - m_Version: 1
     m_Start: 1
     m_ClipIn: 0
@@ -423,7 +423,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: Screenshot2
+    m_DisplayName: GardenScreenshot02
   - m_Version: 1
     m_Start: 5
     m_ClipIn: 0
@@ -456,7 +456,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: Screenshot6
+    m_DisplayName: GardenScreenshot06
   - m_Version: 1
     m_Start: 3
     m_ClipIn: 0
@@ -489,7 +489,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: Screenshot4
+    m_DisplayName: GardenScreenshot04
   - m_Version: 1
     m_Start: 7
     m_ClipIn: 0
@@ -522,7 +522,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: Screenshot8
+    m_DisplayName: GardenScreenshot08
   - m_Version: 1
     m_Start: 2
     m_ClipIn: 0
@@ -573,7 +573,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: Screenshot3
+    m_DisplayName: GardenScreenshot03
   - m_Version: 1
     m_Start: 4
     m_ClipIn: 0
@@ -606,7 +606,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: Screenshot5
+    m_DisplayName: GardenScreenshot05
   - m_Version: 1
     m_Start: 6
     m_ClipIn: 0
@@ -639,7 +639,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: Screenshot7
+    m_DisplayName: GardenScreenshot07
   - m_Version: 1
     m_Start: 8
     m_ClipIn: 0
@@ -708,7 +708,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: Screenshot9
+    m_DisplayName: GardenScreenshot09
   - m_Version: 1
     m_Start: 9
     m_ClipIn: 0
@@ -777,7 +777,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: Screenshot10
+    m_DisplayName: GardenScreenshot10
   - m_Version: 1
     m_Start: 10
     m_ClipIn: 0
@@ -846,7 +846,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: Screenshot11
+    m_DisplayName: GardenScreenshot11
   - m_Version: 1
     m_Start: 11
     m_ClipIn: 0
@@ -897,7 +897,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: Screenshot12
+    m_DisplayName: GardenScreenshot12
   - m_Version: 1
     m_Start: 12
     m_ClipIn: 0
@@ -948,7 +948,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: Screenshot13
+    m_DisplayName: GardenScreenshot13
   - m_Version: 1
     m_Start: 13
     m_ClipIn: 0
@@ -1017,7 +1017,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: Screenshot14
+    m_DisplayName: GardenScreenshot14
   m_Markers:
     m_Objects: []
 --- !u!114 &-7317137437559076913
@@ -1041,7 +1041,7 @@ MonoBehaviour:
       m_Leaf: Recordings\Screenshots
       m_ForceAssetFolder: 0
       m_AbsolutePath: C:/Users/pydon/Documents/Unity/Templates-ContentTemplate_10_URP_Template/Recordings/Screenshots
-    m_FileName: <Scene>03
+    m_FileName: GardenScreenshot03
   m_Version: 1
   outputFormat: 0
   captureAlpha: 0
@@ -1386,7 +1386,7 @@ MonoBehaviour:
       m_Leaf: Recordings\Screenshots
       m_ForceAssetFolder: 0
       m_AbsolutePath: C:/Users/pydon/Documents/Unity/Templates-ContentTemplate_10_URP_Template/Recordings/Screenshots
-    m_FileName: <Scene>02
+    m_FileName: GardenScreenshot02
   m_Version: 1
   outputFormat: 0
   captureAlpha: 0
@@ -1627,7 +1627,7 @@ MonoBehaviour:
       m_Leaf: Recordings\Screenshots
       m_ForceAssetFolder: 0
       m_AbsolutePath: C:/Users/pydon/Documents/Unity/Templates-ContentTemplate_10_URP_Template/Recordings/Screenshots
-    m_FileName: <Scene>13
+    m_FileName: GardenScreenshot13
   m_Version: 1
   outputFormat: 0
   captureAlpha: 0
@@ -1749,7 +1749,7 @@ MonoBehaviour:
       m_Leaf: Recordings\Screenshots
       m_ForceAssetFolder: 0
       m_AbsolutePath: C:/Users/pydon/Documents/Unity/Templates-ContentTemplate_10_URP_Template/Recordings/Screenshots
-    m_FileName: <Scene>08
+    m_FileName: GardenScreenshot08
   m_Version: 1
   outputFormat: 0
   captureAlpha: 0
@@ -1887,7 +1887,7 @@ MonoBehaviour:
       m_Leaf: Recordings\Screenshots
       m_ForceAssetFolder: 0
       m_AbsolutePath: C:/Users/pydon/Documents/Unity/Templates-ContentTemplate_10_URP_Template/Recordings/Screenshots
-    m_FileName: <Scene>12
+    m_FileName: GardenScreenshot12
   m_Version: 1
   outputFormat: 0
   captureAlpha: 0
@@ -2033,7 +2033,7 @@ MonoBehaviour:
       m_Leaf: Recordings\Screenshots
       m_ForceAssetFolder: 0
       m_AbsolutePath: C:/Users/pydon/Documents/Unity/Templates-ContentTemplate_10_URP_Template/Recordings/Screenshots
-    m_FileName: <Scene>09
+    m_FileName: GardenScreenshot09
   m_Version: 1
   outputFormat: 0
   captureAlpha: 0
@@ -2187,7 +2187,7 @@ MonoBehaviour:
       m_Leaf: Recordings\Screenshots
       m_ForceAssetFolder: 0
       m_AbsolutePath: C:/Users/pydon/Documents/Unity/Templates-ContentTemplate_10_URP_Template/Recordings/Screenshots
-    m_FileName: <Scene>10
+    m_FileName: GardenScreenshot10
   m_Version: 1
   outputFormat: 0
   captureAlpha: 0
@@ -2354,7 +2354,7 @@ MonoBehaviour:
       m_Leaf: Recordings\Screenshots
       m_ForceAssetFolder: 0
       m_AbsolutePath: C:/Users/pydon/Documents/Unity/Templates-ContentTemplate_10_URP_Template/Recordings/Screenshots
-    m_FileName: <Scene>11
+    m_FileName: GardenScreenshot11
   m_Version: 1
   outputFormat: 0
   captureAlpha: 0
@@ -2502,7 +2502,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bfda56da833e2384a9677cd3c976a436, type: 3}
-  m_Name: GardenScreenshots
+  m_Name: GardenScreenshots_Timeline
   m_EditorClassIdentifier: 
   m_Version: 0
   m_Tracks:
@@ -2642,7 +2642,7 @@ MonoBehaviour:
   m_Name: RecorderClip
   m_EditorClassIdentifier: 
   enabled: 1
-  take: 13
+  take: 14
   captureEveryNthFrame: 1
   fileNameGenerator:
     m_Path:
@@ -2650,7 +2650,7 @@ MonoBehaviour:
       m_Leaf: Recordings\Screenshots
       m_ForceAssetFolder: 0
       m_AbsolutePath: C:/Users/pydon/Documents/Unity/Templates-ContentTemplate_10_URP_Template/Recordings/Screenshots
-    m_FileName: <Scene>01
+    m_FileName: GardenScreenshot01
   m_Version: 1
   outputFormat: 0
   captureAlpha: 0
@@ -2784,7 +2784,7 @@ MonoBehaviour:
       m_Leaf: Recordings\Screenshots
       m_ForceAssetFolder: 0
       m_AbsolutePath: C:/Users/pydon/Documents/Unity/Templates-ContentTemplate_10_URP_Template/Recordings/Screenshots
-    m_FileName: <Scene>07
+    m_FileName: GardenScreenshot07
   m_Version: 1
   outputFormat: 0
   captureAlpha: 0
@@ -3068,7 +3068,7 @@ MonoBehaviour:
       m_Leaf: Recordings\Screenshots
       m_ForceAssetFolder: 0
       m_AbsolutePath: C:/Users/pydon/Documents/Unity/Templates-ContentTemplate_10_URP_Template/Recordings/Screenshots
-    m_FileName: <Scene>06
+    m_FileName: GardenScreenshot06
   m_Version: 1
   outputFormat: 0
   captureAlpha: 0
@@ -3235,7 +3235,7 @@ MonoBehaviour:
       m_Leaf: Recordings\Screenshots
       m_ForceAssetFolder: 0
       m_AbsolutePath: C:/Users/pydon/Documents/Unity/Templates-ContentTemplate_10_URP_Template/Recordings/Screenshots
-    m_FileName: <Scene>14
+    m_FileName: GardenScreenshot14
   m_Version: 1
   outputFormat: 0
   captureAlpha: 0
@@ -3413,7 +3413,7 @@ MonoBehaviour:
       m_Leaf: Recordings\Screenshots
       m_ForceAssetFolder: 0
       m_AbsolutePath: C:/Users/pydon/Documents/Unity/Templates-ContentTemplate_10_URP_Template/Recordings/Screenshots
-    m_FileName: <Scene>04
+    m_FileName: GardenScreenshot04
   m_Version: 1
   outputFormat: 0
   captureAlpha: 0
