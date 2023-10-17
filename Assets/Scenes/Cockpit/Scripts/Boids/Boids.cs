@@ -215,8 +215,8 @@ public class Boids : MonoBehaviour
                 return boid;
             }
         }
-        Debug.Log("failed to find boid");
-        return _boidsAlt[0];//_boidsAlt.First(b => b.id == id);
+
+        return nullBoid;
     }
 
     public Boid GetClosestBoid(Vector3 positionWS)
