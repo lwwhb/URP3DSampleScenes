@@ -4631,10 +4631,10 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  useOcclusion: 0
+  useOcclusion: 1
   occlusionRadius: 0.1
   useBackgroundCloudOcclusion: 0
-  sampleCount: 32
+  sampleCount: 1
   occlusionOffset: 0.05
   scale: 1
   allowOffScreen: 0
