@@ -6,7 +6,6 @@ using UnityEngine.Rendering.Universal;
 using UnityEngine.SceneManagement;
 using Benchmarking;
 using Cinemachine;
-using UnityEngine.UI;
 
 public class SceneTransitionManager : MonoBehaviour
 {
@@ -533,6 +532,12 @@ public class SceneTransitionManager : MonoBehaviour
     {
         sceneMetaData.Root.SetActive(false);
         instance.m_ScreenCamera.GetComponent<Camera>().enabled = false;
+    }
+
+    public static void DisableLoadedScene()
+    {
+        if (instance.m_Loader == null) return;
+        DisableScene(instance.m_Loader);
     }
 
     public static void StartTransition()
