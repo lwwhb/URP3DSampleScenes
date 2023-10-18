@@ -500,6 +500,7 @@ public class SceneTransitionManager : MonoBehaviour
 
     public static void DisableScene(SceneLoader sceneLoader)
     {
+        if (!IsAvailable()) return;
         SceneMetaData sceneMetaData = instance.registeredScenes[sceneLoader.SceneName];
         if (sceneMetaData == instance.currentScene)
         {
