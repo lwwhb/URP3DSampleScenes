@@ -61,7 +61,12 @@ public class PlayerManager : MonoBehaviour
 
     public void EnableFlythrough()
     {
-        SceneTransitionManager.DisableLoadedScene();
+        if (SceneTransitionManager.IsAvailable())
+        {
+            SceneTransitionManager.DisableLoadedScene();
+            SceneTransitionManager.StopTransition();
+        }
+        
         if (FlythroughDirector == null)
         {
             m_VirtualCamera.gameObject.SetActive(false);
@@ -93,7 +98,11 @@ public class PlayerManager : MonoBehaviour
 
     public void EnableFirstPersonController()
     {
-        SceneTransitionManager.DisableLoadedScene();
+        if (SceneTransitionManager.IsAvailable())
+        {
+            SceneTransitionManager.DisableLoadedScene();
+            SceneTransitionManager.StopTransition();
+        }
         
         m_VirtualCamera.gameObject.SetActive(true);
         m_CrosshairCanvas.SetActive(true);

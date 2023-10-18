@@ -3940,11 +3940,6 @@ Transform:
   - {fileID: 1269914516}
   m_Father: {fileID: 1636404061}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &363308305 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2760477045267651031, guid: 8e5bed6b8dcfed240a38affefd9c58f6, type: 3}
-  m_PrefabInstance: {fileID: 2760477044720773439}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &366880039
 GameObject:
   m_ObjectHideFlags: 0
@@ -25913,7 +25908,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2760477044286518991, guid: 8e5bed6b8dcfed240a38affefd9c58f6, type: 3}
       propertyPath: m_IdleTransitionTime
-      value: 10
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2760477044887562765, guid: 8e5bed6b8dcfed240a38affefd9c58f6, type: 3}
       propertyPath: m_Antialiasing
@@ -26217,8 +26212,6 @@ PlayableDirector:
     value: {fileID: 0}
   - key: {fileID: -2689149134850565563, guid: ff4c18f55a7f3394a9d146c56e35e609, type: 2}
     value: {fileID: 1391890563}
-  - key: {fileID: -6504466326561198432, guid: ff4c18f55a7f3394a9d146c56e35e609, type: 2}
-    value: {fileID: 363308305}
   m_ExposedReferences:
     m_References:
     - db3bbb3e825c7ba4ea23c50aca7dd2ba: {fileID: 3547149924982261993}

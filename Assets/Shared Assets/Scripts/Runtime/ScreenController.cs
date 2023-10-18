@@ -24,7 +24,6 @@ public class ScreenController : MonoBehaviour
         if (screenAnimator != null)
         {
             screenAnimator.SetBool("ScreenOn", true);
-            screenAnimator.SetTrigger("EnableScreen");
         }
 
         if(controlPanel != null)
@@ -41,7 +40,6 @@ public class ScreenController : MonoBehaviour
         if (screenAnimator != null)
         {
             screenAnimator.SetBool("ScreenOn", false);
-            screenAnimator.SetTrigger("DisableScreen");
         }
 
         if(controlPanel != null)
