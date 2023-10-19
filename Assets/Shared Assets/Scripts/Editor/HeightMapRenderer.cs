@@ -1,5 +1,4 @@
 using System.IO;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEditor;
 using UnityEngine.Experimental.Rendering;
@@ -49,7 +48,7 @@ public class HeightMapRenderer : MonoBehaviour
         cameraGO.transform.localPosition = new Vector3(0, 100, 0);
         cameraGO.transform.SetLocalPositionAndRotation(new Vector3(0, 100, 0), Quaternion.Euler(90, 0, 0));
         m_HeightmapCamera = cameraGO.AddComponent<Camera>();
-        m_HeightmapCamera.AddComponent<UniversalAdditionalCameraData>().SetRenderer(2); //TODO: Can we avoid this somehow?
+        m_HeightmapCamera.gameObject.AddComponent<UniversalAdditionalCameraData>().SetRenderer(2); //TODO: Can we avoid this somehow?
         m_HeightmapCamera.enabled = false;
     }
 
