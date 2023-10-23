@@ -1,6 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using Unity.Burst;
 using Unity.Collections;
 using Unity.Jobs;
@@ -207,10 +205,18 @@ public class Boids : MonoBehaviour
         if (startFrame)
             startFrame = false;
     }
-
+    
     public Boid GetBoid(int id)
     {
-        return _boidsAlt.First(b => b.id == id);
+        foreach (var boid in _boidsAlt)
+        {
+            if (boid.id == id)
+            {
+                return boid;
+            }
+        }
+
+        return nullBoid;
     }
 
     public Boid GetClosestBoid(Vector3 positionWS)
