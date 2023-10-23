@@ -4,14 +4,15 @@ using UnityEngine;
 [RequireComponent(typeof(MeshRenderer))]
 public class ScreenController : MonoBehaviour
 {
-    public Animator screenAnimator;
     public LoadingBar controlPanel;
     private Action m_Callback;
     private MeshRenderer m_MeshRenderer;
+    private Animator m_ScreenAnimator;
 
     private void Start()
     {
         m_MeshRenderer = GetComponent<MeshRenderer>();
+        m_ScreenAnimator = GetComponent<Animator>();
     }
 
     public void TurnScreenOn()
@@ -21,9 +22,9 @@ public class ScreenController : MonoBehaviour
             m_MeshRenderer.material.SetTexture("_ScreenColor", SceneTransitionManager.GetScreenRT());
         }
         
-        if (screenAnimator != null)
+        if (m_ScreenAnimator != null)
         {
-            screenAnimator.SetBool("ScreenOn", true);
+            m_ScreenAnimator.SetBool("ScreenOn", true);
         }
 
         if(controlPanel != null)
@@ -37,9 +38,9 @@ public class ScreenController : MonoBehaviour
     public void TurnScreenOff(Action callback)
     {
         m_Callback = callback;
-        if (screenAnimator != null)
+        if (m_ScreenAnimator != null)
         {
-            screenAnimator.SetBool("ScreenOn", false);
+            m_ScreenAnimator.SetBool("ScreenOn", false);
         }
 
         if(controlPanel != null)
@@ -48,7 +49,7 @@ public class ScreenController : MonoBehaviour
         }
     }
 
-    //This is called by the animation clip when the screens are off
+    //This is called by the animation clip when the screens have switched off
     public void Callback()
     {
         if(m_Callback != null)
